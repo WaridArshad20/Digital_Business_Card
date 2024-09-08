@@ -11,13 +11,33 @@ body {
   width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffecd1;
-  border-bottom: 4px solid #ff7d00;
+  background-color: #ff7d00;
+  animation-name: color-transition;
+  animation-duration: 4s;
+  border-bottom: 4px solid #ffecd1;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  box-shadow: 5px 5px 10px;
+}
+
+@keyframes color-transition {
+  from {
+    background-color: #ffecd1;
+  }
+  to {
+    background-color: #ff7d00;
+  }
 }
 
 img {
   width: 150px;
   border-radius: 12px;
+}
+
+h1:hover,
+h3:hover,
+p:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(52, 27, 27);
+  cursor: pointer;
 }
