@@ -1,7 +1,6 @@
 body {
   margin: 40px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 .card {
@@ -11,13 +10,14 @@ body {
   width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ff7d00;
+  background-color: #f58b28;
   animation-name: color-transition;
   animation-duration: 4s;
   border-bottom: 4px solid #ffecd1;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  box-shadow: 5px 5px 10px;
+  box-shadow: 5px 5px 10px black;
+  color: rgb(33, 31, 31);
 }
 
 @keyframes color-transition {
@@ -25,13 +25,14 @@ body {
     background-color: #ffecd1;
   }
   to {
-    background-color: #ff7d00;
+    background-color: #f58b28;
   }
 }
 
 img {
   width: 150px;
   border-radius: 12px;
+  box-shadow: 0 0 5px black;
 }
 
 h1:hover,
@@ -40,4 +41,10 @@ p:hover {
   text-decoration: underline;
   text-decoration-color: rgb(52, 27, 27);
   cursor: pointer;
+}
+
+h1,
+h3,
+p {
+  text-shadow: 1px 1px #ffecd1;
 }
